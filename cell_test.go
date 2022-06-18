@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"testing"
 
@@ -69,7 +68,7 @@ func TestCells(t *testing.T) {
 
 	for name, c := range cases {
 		c := c
-		t.Run(fmt.Sprintf(name), func(t *testing.T) {
+		t.Run(name, func(t *testing.T) {
 			var expectedOutput string
 			for _, l := range c.output {
 				expectedOutput += mockPrint(l)
