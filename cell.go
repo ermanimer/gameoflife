@@ -9,7 +9,13 @@ import (
 )
 
 const (
-	aliveChar      = '*'
+	aliveCellInput = '*'
+	deadCellInput  = '.'
+
+	aliveCellOutput = "● "
+	deadCellOutput  = "  "
+	newLineOutput   = "\n"
+
 	aliveCell cell = 1
 	deadCell  cell = 0
 )
@@ -36,7 +42,7 @@ func newCells(input []string) (cells, error) {
 			if len(input[i]) <= j {
 				continue
 			}
-			if input[i][j] == aliveChar {
+			if input[i][j] == aliveCellInput {
 				cells[i][j] = aliveCell
 			}
 		}
@@ -137,14 +143,14 @@ func (c cells) print(w io.StringWriter) {
 	for i := 0; i < c.height(); i++ {
 		for j := 0; j < c.width(); j++ {
 			if c[i][j] == aliveCell {
-				w.WriteString("● ")
+				w.WriteString(aliveCellOutput)
 				continue
 			}
 
-			w.WriteString("  ")
+			w.WriteString(deadCellOutput)
 		}
 
-		w.WriteString("\n")
+		w.WriteString(newLineOutput)
 	}
 }
 

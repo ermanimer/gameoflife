@@ -86,8 +86,8 @@ func TestCells(t *testing.T) {
 }
 
 func mockPrint(line string) string {
-	l := strings.Replace(line, ".", "  ", -1)
-	l = strings.Replace(l, "*", "● ", -1)
+	l := strings.Replace(line, string(deadCellInput), deadCellOutput, -1)
+	l = strings.Replace(l, string(aliveCellInput), aliveCellOutput, -1)
 	l += "\n"
 	return l
 }
