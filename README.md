@@ -5,6 +5,8 @@ Implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%2
 [![Go](https://github.com/ermanimer/gameoflife/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/ermanimer/gameoflife/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ermanimer/gameoflife)](https://goreportcard.com/report/github.com/ermanimer/gameoflife)
 
+*Works only on Unix-like systems.*
+
 # Instalation
 
 Works on only Unix-like systems.
