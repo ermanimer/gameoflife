@@ -1,11 +1,8 @@
 package main
 
 import (
-	"bufio"
 	"errors"
-	"fmt"
 	"io"
-	"os"
 )
 
 const (
@@ -164,21 +161,4 @@ func (c cells) width() int {
 	}
 
 	return len(c[0])
-}
-
-func readLines(filename string) ([]string, error) {
-	file, err := os.Open(filename)
-	if err != nil {
-		return nil, fmt.Errorf("opening input file failed, %s", err.Error())
-	}
-	defer file.Close()
-
-	var lines []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		line := scanner.Text()
-		lines = append(lines, line)
-	}
-
-	return lines, nil
 }
