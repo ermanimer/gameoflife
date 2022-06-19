@@ -9,8 +9,6 @@ Implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%2
 
 # Instalation
 
-Works on only Unix-like systems.
-
 ```zsh
 go install github.com/ermanimer/gameoflife@latest
 ```
