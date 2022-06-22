@@ -19,7 +19,7 @@ go install github.com/ermanimer/gameoflife@latest
 gameoflife -h
 ```
 
-# Sample Usage:
+# Sample Usage
 
 Run gameoflife with input filename **./inputs/pulsar.txt** and with **2 fps** playback speed.
 
@@ -27,6 +27,6 @@ Run gameoflife with input filename **./inputs/pulsar.txt** and with **2 fps** pl
 gameoflife -i ./inputs/pulsar.txt -s 2
 ```
 
-# Sample Output:
+# Sample Output
 
 ![Pulsar](outputs/pulsar.gif)
